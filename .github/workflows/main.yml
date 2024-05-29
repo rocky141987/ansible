@@ -1,13 +1,4 @@
-- name: Run SSH command
-  uses: appleboy/ssh-action@v1.0.3
-  with:
-    HOST: ${{ secrets.SSH_HOST }}
-    USERNAME: ${{ secrets.SSH_USERNAME }}
-    PASSWORD: ${{ secrets.SSH_PASSWORD }}
-    PORT: ${{ secrets.SSH_PORT }}
-    SCRIPT: "echo 'Hello, world!'"
-
-    name: remote ssh command
+name: remote ssh command
 on: [push]
 jobs:
 
