@@ -13,4 +13,5 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         password: ${{ secrets.SSH_PASSWORD }}
         port: ${{ secrets.REMOTE_PORT }}
+        PasswordAuthentication: no
         script: ansible-playbook /opt/ansibleplay.yaml
